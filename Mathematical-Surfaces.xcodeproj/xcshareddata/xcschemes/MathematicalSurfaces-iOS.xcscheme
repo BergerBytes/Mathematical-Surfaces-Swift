@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4C2BE7120A3F1740098C970"
-               BuildableName = "Mathematical-Surfaces.app"
-               BlueprintName = "Mathematical-Surfaces"
+               BuildableName = "MathematicalSurfaces-iOS.app"
+               BlueprintName = "MathematicalSurfaces-iOS"
                ReferencedContainer = "container:Mathematical-Surfaces.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4C2BE7120A3F1740098C970"
-            BuildableName = "Mathematical-Surfaces.app"
-            BlueprintName = "Mathematical-Surfaces"
+            BuildableName = "MathematicalSurfaces-iOS.app"
+            BlueprintName = "MathematicalSurfaces-iOS"
             ReferencedContainer = "container:Mathematical-Surfaces.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4C2BE7120A3F1740098C970"
-            BuildableName = "Mathematical-Surfaces.app"
-            BlueprintName = "Mathematical-Surfaces"
+            BuildableName = "MathematicalSurfaces-iOS.app"
+            BlueprintName = "MathematicalSurfaces-iOS"
             ReferencedContainer = "container:Mathematical-Surfaces.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4C2BE7120A3F1740098C970"
-            BuildableName = "Mathematical-Surfaces.app"
-            BlueprintName = "Mathematical-Surfaces"
+            BuildableName = "MathematicalSurfaces-iOS.app"
+            BlueprintName = "MathematicalSurfaces-iOS"
             ReferencedContainer = "container:Mathematical-Surfaces.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

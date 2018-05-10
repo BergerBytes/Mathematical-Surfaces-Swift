@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F4C2BE7220A3F1740098C970 /* Mathematical-Surfaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mathematical-Surfaces.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C2BE7220A3F1740098C970 /* MathematicalSurfaces-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MathematicalSurfaces-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C2BE7520A3F1740098C970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4C2BE7720A3F1740098C970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4C2BE7A20A3F1740098C970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		F4C2BE7320A3F1740098C970 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4C2BE7220A3F1740098C970 /* Mathematical-Surfaces.app */,
+				F4C2BE7220A3F1740098C970 /* MathematicalSurfaces-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F4C2BE7120A3F1740098C970 /* Mathematical-Surfaces */ = {
+		F4C2BE7120A3F1740098C970 /* MathematicalSurfaces-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4C2BE8420A3F1750098C970 /* Build configuration list for PBXNativeTarget "Mathematical-Surfaces" */;
+			buildConfigurationList = F4C2BE8420A3F1750098C970 /* Build configuration list for PBXNativeTarget "MathematicalSurfaces-iOS" */;
 			buildPhases = (
 				F4C2BE6E20A3F1740098C970 /* Sources */,
 				F4C2BE6F20A3F1740098C970 /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = "Mathematical-Surfaces";
+			name = "MathematicalSurfaces-iOS";
 			productName = "Mathematical Surfaces";
-			productReference = F4C2BE7220A3F1740098C970 /* Mathematical-Surfaces.app */;
+			productReference = F4C2BE7220A3F1740098C970 /* MathematicalSurfaces-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4C2BE7120A3F1740098C970 /* Mathematical-Surfaces */,
+				F4C2BE7120A3F1740098C970 /* MathematicalSurfaces-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4C2BE8420A3F1750098C970 /* Build configuration list for PBXNativeTarget "Mathematical-Surfaces" */ = {
+		F4C2BE8420A3F1750098C970 /* Build configuration list for PBXNativeTarget "MathematicalSurfaces-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4C2BE8520A3F1750098C970 /* Debug */,
