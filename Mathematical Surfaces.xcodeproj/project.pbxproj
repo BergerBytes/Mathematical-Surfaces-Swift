@@ -12,6 +12,10 @@
 		F4C2BE7B20A3F1740098C970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C2BE7920A3F1740098C970 /* Main.storyboard */; };
 		F4C2BE7D20A3F1750098C970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C2BE7C20A3F1750098C970 /* Assets.xcassets */; };
 		F4C2BE8020A3F1750098C970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C2BE7E20A3F1750098C970 /* LaunchScreen.storyboard */; };
+		F4C2BE8820A3F27A0098C970 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2BE8720A3F27A0098C970 /* Graph.swift */; };
+		F4C2BE8A20A3F6490098C970 /* root.scn in Resources */ = {isa = PBXBuildFile; fileRef = F4C2BE8920A3F6490098C970 /* root.scn */; };
+		F4C2BE8C20A3FA750098C970 /* GraphCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2BE8B20A3FA750098C970 /* GraphCube.swift */; };
+		F4C2BE9220A4704E0098C970 /* graph_surface.shader in Resources */ = {isa = PBXBuildFile; fileRef = F4C2BE9120A4704E0098C970 /* graph_surface.shader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F4C2BE7C20A3F1750098C970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C2BE7F20A3F1750098C970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4C2BE8120A3F1750098C970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C2BE8720A3F27A0098C970 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		F4C2BE8920A3F6490098C970 /* root.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = root.scn; sourceTree = "<group>"; };
+		F4C2BE8B20A3FA750098C970 /* GraphCube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCube.swift; sourceTree = "<group>"; };
+		F4C2BE9120A4704E0098C970 /* graph_surface.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = graph_surface.shader; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		F4C2BE7420A3F1740098C970 /* Mathematical Surfaces */ = {
 			isa = PBXGroup;
 			children = (
+				F4C2BE8E20A46ED90098C970 /* Graph */,
+				F4C2BE8D20A46ED20098C970 /* Shaders */,
 				F4C2BE7520A3F1740098C970 /* AppDelegate.swift */,
 				F4C2BE7720A3F1740098C970 /* ViewController.swift */,
 				F4C2BE7920A3F1740098C970 /* Main.storyboard */,
@@ -62,6 +72,24 @@
 				F4C2BE8120A3F1750098C970 /* Info.plist */,
 			);
 			path = "Mathematical Surfaces";
+			sourceTree = "<group>";
+		};
+		F4C2BE8D20A46ED20098C970 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				F4C2BE9120A4704E0098C970 /* graph_surface.shader */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		F4C2BE8E20A46ED90098C970 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				F4C2BE8720A3F27A0098C970 /* Graph.swift */,
+				F4C2BE8920A3F6490098C970 /* root.scn */,
+				F4C2BE8B20A3FA750098C970 /* GraphCube.swift */,
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +152,9 @@
 			files = (
 				F4C2BE8020A3F1750098C970 /* LaunchScreen.storyboard in Resources */,
 				F4C2BE7D20A3F1750098C970 /* Assets.xcassets in Resources */,
+				F4C2BE8A20A3F6490098C970 /* root.scn in Resources */,
 				F4C2BE7B20A3F1740098C970 /* Main.storyboard in Resources */,
+				F4C2BE9220A4704E0098C970 /* graph_surface.shader in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C2BE8820A3F27A0098C970 /* Graph.swift in Sources */,
 				F4C2BE7820A3F1740098C970 /* ViewController.swift in Sources */,
 				F4C2BE7620A3F1740098C970 /* AppDelegate.swift in Sources */,
+				F4C2BE8C20A3FA750098C970 /* GraphCube.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
