@@ -13,7 +13,7 @@ class GraphCube: SCNNode {
     
     override init() {
         super.init()
-        let box = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let box = SCNBox(width: 1, height: 2, length: 1, chamferRadius: 0)
         let material = SCNMaterial()
         
         box.materials = [material]
@@ -29,6 +29,5 @@ class GraphCube: SCNNode {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 

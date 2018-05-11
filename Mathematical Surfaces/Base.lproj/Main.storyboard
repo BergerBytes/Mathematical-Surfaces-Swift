@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,158 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MathematicalSurfaces_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mXP-Br-hTh">
+                                <rect key="frame" x="16" y="16" width="120" height="288"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuL-sv-eEQ">
+                                        <rect key="frame" x="10" y="0.0" width="100" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Vqw-DE-eRk"/>
+                                        </constraints>
+                                        <state key="normal" title="None"/>
+                                        <connections>
+                                            <action selector="DidTapNone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYP-yr-bEB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxG-zt-WPb">
+                                        <rect key="frame" x="10" y="41" width="100" height="41.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="eDV-Uv-hgY"/>
+                                        </constraints>
+                                        <state key="normal" title="Sine"/>
+                                        <connections>
+                                            <action selector="DidTapSine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Chu-Af-mXE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUE-79-fim">
+                                        <rect key="frame" x="10" y="82.5" width="100" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="0t2-aS-Yjx"/>
+                                        </constraints>
+                                        <state key="normal" title="Multisine"/>
+                                        <connections>
+                                            <action selector="DidTapMultisine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGd-HM-qhX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0a-aZ-jUe">
+                                        <rect key="frame" x="10" y="123.5" width="100" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="m8n-8y-ck0"/>
+                                        </constraints>
+                                        <state key="normal" title="Multisine2"/>
+                                        <connections>
+                                            <action selector="DidTapMultisine2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWn-50-Rrb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CW-Pc-e6c">
+                                        <rect key="frame" x="10" y="164.5" width="100" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="M5U-Bl-skQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Cosine"/>
+                                        <connections>
+                                            <action selector="DidTapCosine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bP5-Lb-h4Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buR-DL-Qsw">
+                                        <rect key="frame" x="10" y="205.5" width="100" height="41.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="VXq-3n-OKs"/>
+                                        </constraints>
+                                        <state key="normal" title="Tangent"/>
+                                        <connections>
+                                            <action selector="DidTapTangent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETl-fz-TGe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQp-ZB-duA">
+                                        <rect key="frame" x="10" y="247" width="100" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="ymj-Yw-caf"/>
+                                        </constraints>
+                                        <state key="normal" title="Ripple"/>
+                                        <connections>
+                                            <action selector="DidTapRipple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZ5-S3-BX4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="PXd-d8-oUj"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dYX-H7-677">
+                                <rect key="frame" x="349" y="189.5" width="203" height="114.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ThO-EL-Lbd">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="53.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolution: 50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jl-11-nB8">
+                                                <rect key="frame" x="46.5" y="0.0" width="110" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="10" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="TXo-tG-H0h">
+                                                <rect key="frame" x="-2" y="23.5" width="207" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="203" id="Qcb-dQ-rtD"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="DidReleaseResolutionSlider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXm-nv-qKs"/>
+                                                    <action selector="DidReleaseResolutionSlider:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="bKN-M5-VyF"/>
+                                                    <action selector="DidSlideResolutionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="K8h-Yo-PXi"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XKB-3l-5N1">
+                                        <rect key="frame" x="51.5" y="53.5" width="100" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dimensions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dky-Am-v0Q">
+                                                <rect key="frame" x="5.5" y="0.0" width="89" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gYw-C2-gTK">
+                                                <rect key="frame" x="0.0" y="33" width="100" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="G1y-uD-bDN"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="1D"/>
+                                                    <segment title="2D"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="DidTapDimension:" destination="BYZ-38-t0r" eventType="valueChanged" id="6tS-LE-bOx"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dYX-H7-677" secondAttribute="trailing" constant="16" id="1aQ-JD-gBD"/>
+                            <constraint firstItem="mXP-Br-hTh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DSH-bp-twj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mXP-Br-hTh" secondAttribute="bottom" constant="16" id="WjJ-TM-lLs"/>
+                            <constraint firstItem="mXP-Br-hTh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="c2X-lC-5dJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dYX-H7-677" secondAttribute="bottom" constant="16" id="fBC-ij-la0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="resolutionLabel" destination="9Jl-11-nB8" id="Fuh-QU-o6c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="292.80359820089956" y="125.59999999999999"/>
         </scene>
     </scenes>
 </document>
