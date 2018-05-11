@@ -30,25 +30,25 @@ class ViewController: UIViewController {
 // MARK: - Init
 extension ViewController {
     func initSceneKit() {
-        let _sceneView = SCNView(frame: self.view.bounds)
-        _sceneView.rendersContinuously = true
-        _sceneView.scene = SCNScene(named: "root.scn")
-        _sceneView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.insertSubview(_sceneView, at: 0)
+        let sceneView = SCNView(frame: self.view.bounds)
+        sceneView.rendersContinuously = true
+        sceneView.scene = SCNScene(named: "root.scn")
+        sceneView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.insertSubview(sceneView, at: 0)
         NSLayoutConstraint.activate([
-            _sceneView.topAnchor.constraint(equalTo: self.view.topAnchor),
-            _sceneView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            _sceneView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            _sceneView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            sceneView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            sceneView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            sceneView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            sceneView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
         ])
-        _sceneView.allowsCameraControl = true
-        _sceneView.delegate = self
-        self.sceneView = _sceneView
+        sceneView.allowsCameraControl = true
+        sceneView.delegate = self
+        self.sceneView = sceneView
     }
     
-    func initGraph() {
+    func initGraph(_scene: SCNScene? = nil) {
         guard
-            let scene = sceneView.scene else {
+            let scene = _scene ?? sceneView.scene else {
                 fatalError("No scene")
         }
         scene.rootNode.childNodes.forEach { (node) in
