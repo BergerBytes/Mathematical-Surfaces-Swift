@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F48A7DD720A615BB00058E10 /* MathematicalSurfaces_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A7DD620A615BB00058E10 /* MathematicalSurfaces_iOSTests.swift */; };
 		F4C2BE7620A3F1740098C970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2BE7520A3F1740098C970 /* AppDelegate.swift */; };
 		F4C2BE7820A3F1740098C970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2BE7720A3F1740098C970 /* ViewController.swift */; };
 		F4C2BE7B20A3F1740098C970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C2BE7920A3F1740098C970 /* Main.storyboard */; };
@@ -18,7 +19,20 @@
 		F4C2BE9220A4704E0098C970 /* graph_surface.shader in Resources */ = {isa = PBXBuildFile; fileRef = F4C2BE9120A4704E0098C970 /* graph_surface.shader */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F48A7DD920A615BB00058E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4C2BE6A20A3F1740098C970 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4C2BE7120A3F1740098C970;
+			remoteInfo = "MathematicalSurfaces-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F48A7DD420A615BA00058E10 /* MathematicalSurfaces-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MathematicalSurfaces-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48A7DD620A615BB00058E10 /* MathematicalSurfaces_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathematicalSurfaces_iOSTests.swift; sourceTree = "<group>"; };
+		F48A7DD820A615BB00058E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C2BE7220A3F1740098C970 /* MathematicalSurfaces-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MathematicalSurfaces-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C2BE7520A3F1740098C970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4C2BE7720A3F1740098C970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F48A7DD120A615BA00058E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4C2BE6F20A3F1740098C970 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F48A7DD520A615BB00058E10 /* MathematicalSurfaces-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F48A7DD620A615BB00058E10 /* MathematicalSurfaces_iOSTests.swift */,
+				F48A7DD820A615BB00058E10 /* Info.plist */,
+			);
+			path = "MathematicalSurfaces-iOSTests";
+			sourceTree = "<group>";
+		};
 		F4C2BE6920A3F1740098C970 = {
 			isa = PBXGroup;
 			children = (
 				F4C2BE7420A3F1740098C970 /* Mathematical Surfaces */,
+				F48A7DD520A615BB00058E10 /* MathematicalSurfaces-iOSTests */,
 				F4C2BE7320A3F1740098C970 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C2BE7220A3F1740098C970 /* MathematicalSurfaces-iOS.app */,
+				F48A7DD420A615BA00058E10 /* MathematicalSurfaces-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +127,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F48A7DD320A615BA00058E10 /* MathematicalSurfaces-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48A7DDD20A615BB00058E10 /* Build configuration list for PBXNativeTarget "MathematicalSurfaces-iOSTests" */;
+			buildPhases = (
+				F48A7DD020A615BA00058E10 /* Sources */,
+				F48A7DD120A615BA00058E10 /* Frameworks */,
+				F48A7DD220A615BA00058E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F48A7DDA20A615BB00058E10 /* PBXTargetDependency */,
+			);
+			name = "MathematicalSurfaces-iOSTests";
+			productName = "MathematicalSurfaces-iOSTests";
+			productReference = F48A7DD420A615BA00058E10 /* MathematicalSurfaces-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F4C2BE7120A3F1740098C970 /* MathematicalSurfaces-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4C2BE8420A3F1750098C970 /* Build configuration list for PBXNativeTarget "MathematicalSurfaces-iOS" */;
@@ -122,6 +172,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Bergerbytes;
 				TargetAttributes = {
+					F48A7DD320A615BA00058E10 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F4C2BE7120A3F1740098C970;
+					};
 					F4C2BE7120A3F1740098C970 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -141,11 +195,19 @@
 			projectRoot = "";
 			targets = (
 				F4C2BE7120A3F1740098C970 /* MathematicalSurfaces-iOS */,
+				F48A7DD320A615BA00058E10 /* MathematicalSurfaces-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F48A7DD220A615BA00058E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4C2BE7020A3F1740098C970 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +223,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F48A7DD020A615BA00058E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48A7DD720A615BB00058E10 /* MathematicalSurfaces_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4C2BE6E20A3F1740098C970 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +243,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F48A7DDA20A615BB00058E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4C2BE7120A3F1740098C970 /* MathematicalSurfaces-iOS */;
+			targetProxy = F48A7DD920A615BB00058E10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F4C2BE7920A3F1740098C970 /* Main.storyboard */ = {
@@ -194,6 +272,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F48A7DDB20A615BB00058E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77N74LDXL5;
+				INFOPLIST_FILE = "MathematicalSurfaces-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bergerbytes.MathematicalSurfaces-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathematicalSurfaces-iOS.app/MathematicalSurfaces-iOS";
+			};
+			name = Debug;
+		};
+		F48A7DDC20A615BB00058E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77N74LDXL5;
+				INFOPLIST_FILE = "MathematicalSurfaces-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bergerbytes.MathematicalSurfaces-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathematicalSurfaces-iOS.app/MathematicalSurfaces-iOS";
+			};
+			name = Release;
+		};
 		F4C2BE8220A3F1750098C970 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -347,6 +465,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F48A7DDD20A615BB00058E10 /* Build configuration list for PBXNativeTarget "MathematicalSurfaces-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48A7DDB20A615BB00058E10 /* Debug */,
+				F48A7DDC20A615BB00058E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F4C2BE6D20A3F1740098C970 /* Build configuration list for PBXProject "Mathematical-Surfaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
