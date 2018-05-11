@@ -29,7 +29,8 @@ class ViewController: UIViewController {
 
 // MARK: - Init
 extension ViewController {
-    func initSceneKit() {
+    @discardableResult
+    func initSceneKit() -> SCNView {
         let sceneView = SCNView(frame: self.view.bounds)
         sceneView.rendersContinuously = true
         sceneView.scene = SCNScene(named: "root.scn")
@@ -44,6 +45,7 @@ extension ViewController {
         sceneView.allowsCameraControl = true
         sceneView.delegate = self
         self.sceneView = sceneView
+        return sceneView
     }
     
     func initGraph(_scene: SCNScene? = nil) {
