@@ -12,12 +12,14 @@ import SceneKit
 public typealias GraphMap = (inout SCNVector3, Float)->()
 
 protocol GraphInterface: class {
+    func cleanUp()
     func update(atTime time: TimeInterval, withMap: @escaping GraphMap)
 }
 
 class Graph {
     weak var scene: SCNScene?
     
+    weak var rootNode: SCNNode?
     let resolution: Int
     let dimensions: Int
     var nodes = [[GraphCube]]()
@@ -57,7 +59,7 @@ extension Graph {
                 node.scale = SCNVector3(scale, scale, scale)
                 
                 let x = (((index + 0.5) / halfAmount) - 1)
-                let y = dimensions < 3  ? 0.0 : (((Double(dimensionIndex))))
+                let y = 0.0
                 let z = dimensions == 1 ? 0.0 : (((Double(dimensionIndex) + 0.5) / halfAmount) - 1)
                 node.position = SCNVector3(x,y,z)
                 
@@ -119,6 +121,9 @@ extension Graph {
 }
 
 extension Graph: GraphInterface {
+    func cleanUp() {
+        rootNode?.removeFromParentNode()
+    }
     func update(atTime time: TimeInterval, withMap map: @escaping GraphMap) {
         for dimensionIndex in 0...(dimensions - 1) * resolution {
             for node in nodes[dimensionIndex] {
